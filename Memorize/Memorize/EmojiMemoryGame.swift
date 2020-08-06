@@ -20,11 +20,11 @@ class EmojiMemoryGame: ObservableObject {
     @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
     
     static func createMemoryGame() -> MemoryGame<String> {
-        var emojis = ["👻", "🎃", "🕷", "🥶", "🦄", "🐮", "🐴", "🐺", "🐤", "🙉", "🐷", "🦀"]
+        var emojis = theme.emojiSet
         emojis.shuffle()
         let trimmedEmojis = emojis.prefix(5)
         
-        return MemoryGame<String>(numberOfPairsOfCards: Int.random(in: 2...trimmedEmojis.count)) { pairIndex in
+        return MemoryGame<String>(numberOfPairsOfCards: theme.randomNumberOfCards ? Int.random(in: 2...trimmedEmojis.count) : emojis.count) { pairIndex in
             return emojis[pairIndex]
         }
     }
