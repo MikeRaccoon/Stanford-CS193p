@@ -14,6 +14,7 @@ struct EmojiMemoryGameView: View {
     var body: some View {
         VStack {
             Text(theme.name)
+            Text("Score: \(String(self.viewModel.gameScore))")
             
             Grid(viewModel.cards) { card in
                 CardView(card: card).onTapGesture {
@@ -52,7 +53,7 @@ struct CardView: View {
             if card.isFaceUp {
                 RoundedRectangle(cornerRadius: cornerRadius).fill(Color.white)
                 RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth)
-                Text( card.content)
+                Text(card.content)
             } else {
                 if !card.isMatched {
                     RoundedRectangle(cornerRadius: cornerRadius).fill()
