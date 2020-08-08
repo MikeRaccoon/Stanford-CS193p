@@ -32,9 +32,6 @@ struct EmojiMemoryGameView: View {
                 Text("New Game")
             }
             .padding(15)
-            .foregroundColor(.white)
-            .background(theme.themeColor)
-            .cornerRadius(10)
         }
     }
 }
@@ -56,7 +53,7 @@ struct CardView: View {
                 Text(card.content)
             } else {
                 if !card.isMatched {
-                    RoundedRectangle(cornerRadius: cornerRadius).fill()
+                    RoundedRectangle(cornerRadius: cornerRadius).fill(LinearGradient(gradient: Gradient(colors: [theme.themeColor, .black]), startPoint: .top, endPoint: .bottomTrailing))
                 }
             }
         }
