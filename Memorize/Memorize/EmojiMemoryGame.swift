@@ -19,7 +19,7 @@ class EmojiMemoryGame: ObservableObject {
     
     @Published private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
     
-    static func createMemoryGame() -> MemoryGame<String> {
+    private static func createMemoryGame() -> MemoryGame<String> {
         var emojis = theme.emojiSet
         emojis.shuffle()
         let trimmedEmojis = emojis.prefix(5)
