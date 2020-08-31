@@ -10,6 +10,9 @@
 		2738664024F17C00001D16AE /* AnimatableSystemFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2738663F24F17C00001D16AE /* AnimatableSystemFontModifier.swift */; };
 		2756E00324EAEAF100C961AC /* EmojiArtExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756E00224EAEAF100C961AC /* EmojiArtExtensions.swift */; };
 		2756E00524F098A500C961AC /* OptionalImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2756E00424F098A500C961AC /* OptionalImage.swift */; };
+		2776D27B24F9DD8A0096EEFA /* Spinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776D27A24F9DD8A0096EEFA /* Spinning.swift */; };
+		2776D27D24FCC5610096EEFA /* PaletteChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776D27C24FCC5610096EEFA /* PaletteChooser.swift */; };
+		2776D27F24FCC8570096EEFA /* EmojiArtDocumentPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2776D27E24FCC8570096EEFA /* EmojiArtDocumentPalette.swift */; };
 		279A2F8D24E88E8C00A629BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A2F8C24E88E8C00A629BC /* AppDelegate.swift */; };
 		279A2F8F24E88E8D00A629BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A2F8E24E88E8D00A629BC /* SceneDelegate.swift */; };
 		279A2F9124E88E8D00A629BC /* EmojiArtDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A2F9024E88E8D00A629BC /* EmojiArtDocumentView.swift */; };
@@ -24,7 +27,10 @@
 		2738663F24F17C00001D16AE /* AnimatableSystemFontModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableSystemFontModifier.swift; sourceTree = "<group>"; };
 		2756E00224EAEAF100C961AC /* EmojiArtExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtExtensions.swift; sourceTree = "<group>"; };
 		2756E00424F098A500C961AC /* OptionalImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalImage.swift; sourceTree = "<group>"; };
-		279A2F8924E88E8C00A629BC /* EmojiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmojiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2776D27A24F9DD8A0096EEFA /* Spinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinning.swift; sourceTree = "<group>"; };
+		2776D27C24FCC5610096EEFA /* PaletteChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteChooser.swift; sourceTree = "<group>"; };
+		2776D27E24FCC8570096EEFA /* EmojiArtDocumentPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentPalette.swift; sourceTree = "<group>"; };
+		279A2F8924E88E8C00A629BC /* Emoji Art.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Art.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279A2F8C24E88E8C00A629BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		279A2F8E24E88E8D00A629BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		279A2F9024E88E8D00A629BC /* EmojiArtDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocumentView.swift; sourceTree = "<group>"; };
@@ -58,7 +64,7 @@
 		279A2F8A24E88E8C00A629BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				279A2F8924E88E8C00A629BC /* EmojiArt.app */,
+				279A2F8924E88E8C00A629BC /* Emoji Art.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,7 +76,10 @@
 				279A2F8E24E88E8D00A629BC /* SceneDelegate.swift */,
 				279A2FA024E88EDA00A629BC /* EmojiArtDocument.swift */,
 				279A2F9024E88E8D00A629BC /* EmojiArtDocumentView.swift */,
+				2776D27E24FCC8570096EEFA /* EmojiArtDocumentPalette.swift */,
+				2776D27A24F9DD8A0096EEFA /* Spinning.swift */,
 				2756E00424F098A500C961AC /* OptionalImage.swift */,
+				2776D27C24FCC5610096EEFA /* PaletteChooser.swift */,
 				279A2FA224E8955500A629BC /* EmojiArt.swift */,
 				2756E00224EAEAF100C961AC /* EmojiArtExtensions.swift */,
 				2738663F24F17C00001D16AE /* AnimatableSystemFontModifier.swift */,
@@ -107,7 +116,7 @@
 			);
 			name = EmojiArt;
 			productName = EmojiArt;
-			productReference = 279A2F8924E88E8C00A629BC /* EmojiArt.app */;
+			productReference = 279A2F8924E88E8C00A629BC /* Emoji Art.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,14 +170,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2776D27F24FCC8570096EEFA /* EmojiArtDocumentPalette.swift in Sources */,
 				279A2F8D24E88E8C00A629BC /* AppDelegate.swift in Sources */,
 				279A2F8F24E88E8D00A629BC /* SceneDelegate.swift in Sources */,
 				2756E00324EAEAF100C961AC /* EmojiArtExtensions.swift in Sources */,
 				279A2FA324E8955500A629BC /* EmojiArt.swift in Sources */,
 				279A2F9124E88E8D00A629BC /* EmojiArtDocumentView.swift in Sources */,
 				2756E00524F098A500C961AC /* OptionalImage.swift in Sources */,
+				2776D27B24F9DD8A0096EEFA /* Spinning.swift in Sources */,
 				2738664024F17C00001D16AE /* AnimatableSystemFontModifier.swift in Sources */,
 				279A2FA124E88EDA00A629BC /* EmojiArtDocument.swift in Sources */,
+				2776D27D24FCC5610096EEFA /* PaletteChooser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.raccoon.EmojiArt;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Emoji Art";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,7 +346,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.raccoon.EmojiArt;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Emoji Art";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
