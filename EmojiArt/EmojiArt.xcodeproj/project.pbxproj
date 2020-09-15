@@ -26,6 +26,7 @@
 		279A2F9924E88E9A00A629BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 279A2F9724E88E9A00A629BC /* LaunchScreen.storyboard */; };
 		279A2FA124E88EDA00A629BC /* EmojiArtDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A2FA024E88EDA00A629BC /* EmojiArtDocument.swift */; };
 		279A2FA324E8955500A629BC /* EmojiArt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279A2FA224E8955500A629BC /* EmojiArt.swift */; };
+		27F11A0725108FE60001E98A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F11A0625108FE60001E98A /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		279A2F9A24E88E9A00A629BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279A2FA024E88EDA00A629BC /* EmojiArtDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArtDocument.swift; sourceTree = "<group>"; };
 		279A2FA224E8955500A629BC /* EmojiArt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiArt.swift; sourceTree = "<group>"; };
+		27F11A0625108FE60001E98A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +84,13 @@
 		279A2F8B24E88E8C00A629BC /* EmojiArt */ = {
 			isa = PBXGroup;
 			children = (
+				279A2F9024E88E8D00A629BC /* EmojiArtDocumentView.swift */,
+				27F11A0625108FE60001E98A /* ImagePicker.swift */,
 				279A2F8C24E88E8C00A629BC /* AppDelegate.swift */,
 				279A2F8E24E88E8D00A629BC /* SceneDelegate.swift */,
 				279A2FA024E88EDA00A629BC /* EmojiArtDocument.swift */,
 				275D1BBC250992100057B557 /* EmojiArtDocumentChooser.swift */,
 				275D1BBA25098D1D0057B557 /* EmojiArtDocumentStore.swift */,
-				279A2F9024E88E8D00A629BC /* EmojiArtDocumentView.swift */,
 				2776D27E24FCC8570096EEFA /* EmojiArtDocumentPalette.swift */,
 				2776D27A24F9DD8A0096EEFA /* Spinning.swift */,
 				2756E00424F098A500C961AC /* OptionalImage.swift */,
@@ -188,6 +191,7 @@
 				2776D27F24FCC8570096EEFA /* EmojiArtDocumentPalette.swift in Sources */,
 				279A2F8D24E88E8C00A629BC /* AppDelegate.swift in Sources */,
 				279A2F8F24E88E8D00A629BC /* SceneDelegate.swift in Sources */,
+				27F11A0725108FE60001E98A /* ImagePicker.swift in Sources */,
 				2756E00324EAEAF100C961AC /* EmojiArtExtensions.swift in Sources */,
 				279A2FA324E8955500A629BC /* EmojiArt.swift in Sources */,
 				279A2F9124E88E8D00A629BC /* EmojiArtDocumentView.swift in Sources */,
